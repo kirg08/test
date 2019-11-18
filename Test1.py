@@ -15,6 +15,7 @@ for i in range(5): #range(5) - до какого IP производить ко�
                         if id_file.endswith(".id"):
                             os.rename(path + id_file, path + id_file + ".old")
                     os.rename(path + r"names.nsf", path + r"names_old.nsf")
+                    os.rename(path + r"notes.ini", path + r"notes_old.ini")
                     notesini = open(path + r"notes.ini", "w")
                     notesini.write("[Notes]\nKitType=1\nDirectory=C:\\Users\\" + dir + "\\Lotus\\Notes\\data\nUserInterface=ru\nInstallType=6\nMailServer=CN=S5200-LT01/O=Saratov")
                    # shutil.copyfile(r"test.ini", path + r"test.ini")
